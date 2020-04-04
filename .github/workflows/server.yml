@@ -34,7 +34,7 @@ jobs:
         key: ${{ runner.os }}-20200309-ivy2
     - uses: olafurpg/setup-scala@49fc8c734ef6916b4e1da8ba8d81bb26a2b46a06 # v7
       with:
-        java-version: openjdk@1.11
+        java-version: openjdk@1.13
     - run: ./lila test
     - run: ./lila -Depoll=true dist
     - run: unzip target/universal/lila-3.0.zip
