@@ -18,7 +18,7 @@ final class Lobby(
   )
 
   def home =
-    OpenCache { implicit ctx =>
+    Open { implicit ctx =>
       pageHit
       negotiate(
         html = keyPages.home(Results.Ok).dmap(NoCache),
