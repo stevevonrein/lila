@@ -13,7 +13,7 @@ export function runner(hacks: () => void, throttleMs: number = 100): void {
 
   function schedule() {
     timeout && clearTimeout(timeout);
-    timeout = setTimeout(runHacks, 500);
+    timeout = setTimeout(runHacks, 20000);
   }
 
   runHacks();
