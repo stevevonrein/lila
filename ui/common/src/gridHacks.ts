@@ -26,6 +26,7 @@ export function fixMainBoardHeight(container: HTMLElement): void {
   const mainBoard = container.querySelector('.main-board') as HTMLElement;
   if (mainBoard) {
     const width = mainBoard.offsetWidth;
+    console.log(lastMainBoardHeight, width);
     if (lastMainBoardHeight != width) {
       lastMainBoardHeight = width;
       mainBoard.style.height = width + 'px';
