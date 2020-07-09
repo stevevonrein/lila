@@ -615,8 +615,9 @@ export default class AnalyseCtrl {
     return this.ceval;
   }
 
-  outcome(node?: Tree.Node): Outcome | undefined {
-    return this.position(node || this.node).unwrap(pos => pos.outcome(), _ => undefined);
+  outcome(_node?: Tree.Node): Outcome | undefined {
+    return;
+    //return this.position(node || this.node).unwrap(pos => pos.outcome(), _ => undefined);
   }
 
   position(node: Tree.Node): Result<Position, PositionError> {
